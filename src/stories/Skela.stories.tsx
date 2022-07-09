@@ -1,13 +1,18 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react"
-import ReactSkela, {Props} from "../components/ReactSkela";
+import Skela, {Props} from "../components/Skela";
 
 const meta: Meta = {
   title: "React Skela",
-  component: ReactSkela,
+  component: Skela,
   argTypes: {
     type: {
-      defaultValue: "line"
+      options: ["line", "circle", "square"], // iterator
+      mapping: ["line", "circle", "square"], // values
+      control: {
+        type: 'select', 
+        labels: ["line", "circle", "square"],
+      },
     },
     animationType: {
       defaultValue: "wave"
@@ -26,7 +31,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<Props> = (args) => <ReactSkela {...args} />
+const Template: Story<Props> = (args) => <Skela {...args} />
 
 export const Default = Template.bind({})
 

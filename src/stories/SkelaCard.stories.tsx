@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react"
-import {Card} from "../components";
+import {SkelaCard} from "../components";
 
 const meta: Meta = {
-  title: "React Skela Card",
-  component: Card,
+  title: "Skela Card",
+  component: SkelaCard,
   argTypes: {
     cradCount: {
       defaultValue: 1
@@ -41,7 +41,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (args) => <Card {...args} />
+const Template: Story = (args) => <SkelaCard {...args} />
 
 export const Default = Template.bind({})
 

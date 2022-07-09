@@ -1,10 +1,10 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react"
-import {Table} from "../components";
+import {SkelaTable} from "../components";
 
 const meta: Meta = {
-  title: "React Skela Table",
-  component: Table,
+  title: "Skela Table",
+  component: SkelaTable,
   argTypes: {
     cols: {
       defaultValue: 0
@@ -23,7 +23,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (args) => <Table {...args} />
+const Template: Story = (args) => <SkelaTable {...args} />
 
 export const Default = Template.bind({})
 

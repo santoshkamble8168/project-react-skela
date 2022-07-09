@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactSkela, { Table, Card } from './components';
+import Skela, { SkelaTable, SkelaCard } from './components';
 
 function App() {
   return (
     <div className="App">
-      {/* <ReactSkela  /> */}
-      <Card cardWidth="200px" square={false} title={false}  cardHeight="300px" animationType="pulse" />
-      {/* <Table cols={4} rows={4} color="orange" /> */}
+      <Skela  />
+      <SkelaCard cardWidth="200px"  cardHeight="300px" animationType="pulse" />
+      <SkelaTable cols={4} rows={4} color="orange" />
     </div>
   );
 }

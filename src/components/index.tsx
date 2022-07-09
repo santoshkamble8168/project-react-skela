@@ -1,6 +1,6 @@
-import ReactSkela from "./ReactSkela";
-import {Table} from "./Table";
-import { Card } from "./Card";
+import Skela from "./Skela";
+import {SkelaTable} from "./SkelaTable";
+import { SkelaCard } from "./SkelaCard";
 
-export default ReactSkela
-export {Table, Card} 
+export default Skela
+export {SkelaTable, SkelaCard} 

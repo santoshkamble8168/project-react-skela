@@ -16,7 +16,7 @@ export interface Props {
 }
 
 /**ReactSkela is a skeleton library used to animated placeholder that simulates the layout of a website while data is being loaded.*/
-const ReactSkela = ({
+const Skela = ({
   type="line",
   width="",
   height="",
@@ -46,4 +46,4 @@ const ReactSkela = ({
   )
 }
 
-export default ReactSkela
+export default Skela

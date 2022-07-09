@@ -1,8 +1,8 @@
 import React from 'react'
-import ReactSkela from './ReactSkela'
+import Skela from './Skela'
 
 /**ReactSkelaTable is configurable with the ReactSkela (use ReactSkela propeties in to ReactSkelaTable) */
-export const Table = ({
+export const SkelaTable = ({
   cols = 0,
   rows = 10,
   tableWidth = "100%",
@@ -19,10 +19,10 @@ export const Table = ({
               cols ?
                 Array(cols).fill(null).map((clo, cIndex) => {
                   return (<div className='__col' style={{ padding: rowGap }} key={cIndex}>
-                    <ReactSkela height='20px' {...rest} /></div>)
+                    <Skela height='20px' {...rest} /></div>)
                 }) :
                 (<div className='__col' style={{ paddingBottom: rowGap }}>
-                  <ReactSkela height='20px' {...rest} /> </div>)
+                  <Skela height='20px' {...rest} /> </div>)
             }
           </div>
         )

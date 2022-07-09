@@ -1,8 +1,8 @@
 import React from 'react'
-import ReactSkela from './ReactSkela'
+import Skela from './Skela'
 
 /**List is configurable with the ReactSkela (use ReactSkela propeties in to ReactSkelaTable) */
-export const Card = ({
+export const SkelaCard = ({
   squareWidth = "250px",
   squareHeight = "250px",
   title = true,
@@ -31,13 +31,13 @@ export const Card = ({
             }}
           >
             <div className='card'>
-              <ReactSkela type='square' width={squareWidth} height={squareHeight} {...rest} />
+              <Skela type='square' width={squareWidth} height={squareHeight} {...rest} />
             </div>
             <div className='title'>
-              {title && <ReactSkela width={titleWidth} height={titleHeight} {...rest} />}
+              {title && <Skela width={titleWidth} height={titleHeight} {...rest} />}
             </div>
             <div className='sub-title'>
-              {subTitle && <ReactSkela width={subTitleWidth} height={subTitleHeight} {...rest} />}
+              {subTitle && <Skela width={subTitleWidth} height={subTitleHeight} {...rest} />}
             </div>
           </div>
         </>)
