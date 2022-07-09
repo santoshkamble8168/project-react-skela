@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react"
 import Skela, {Props} from "../components/Skela";
 
 const meta: Meta = {
-  title: "React Skela",
+  title: "Skela",
   component: Skela,
   argTypes: {
     type: {
