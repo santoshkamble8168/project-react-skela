@@ -1,6 +1,3 @@
-import Skela from "./Skela";
-import {SkelaTable} from "./SkelaTable";
-import { SkelaCard } from "./SkelaCard";
-
-export default Skela
-export {SkelaTable, SkelaCard} 
+export * from "./Skela"
+export * from "./SkelaTable"
+export * from "./SkelaCard"

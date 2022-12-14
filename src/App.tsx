@@ -1,5 +1,5 @@
 import React from 'react';
-import Skela, { SkelaTable, SkelaCard } from './components';
+import {Skela, SkelaTable, SkelaCard } from './components';
 
 function App() {
   return (

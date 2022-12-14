@@ -1,7 +1,7 @@
 import React from 'react'
 import "./index.css"
 
-export interface Props {
+export interface PropsType {
   /** 'Line' is the default skeleton type */
   type?: string,
   width?: string,
@@ -16,7 +16,7 @@ export interface Props {
 }
 
 /**ReactSkela is a skeleton library used to animated placeholder that simulates the layout of a website while data is being loaded.*/
-const Skela = ({
+export const Skela = ({
   type="line",
   width="",
   height="",
@@ -26,7 +26,7 @@ const Skela = ({
   animationType="wave",
   className="",
   style={}
-}: Props) => {
+}: PropsType) => {
   const classes = `skeleton ${type.toLocaleLowerCase()} ${className} ${animation ? animationType.toLocaleLowerCase()  : ""}`;
 
   return (
@@ -45,5 +45,3 @@ const Skela = ({
     </div>
   )
 }
-
-export default Skela

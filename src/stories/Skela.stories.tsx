@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react"
-import Skela, {Props} from "../components/Skela";
+import {Skela, PropsType} from "../components";
 
 const meta: Meta = {
   title: "Skela",
@@ -31,7 +31,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<Props> = (args) => <Skela {...args} />
+const Template: Story<PropsType> = (args) => <Skela {...args} />
 
 export const Default = Template.bind({})
 

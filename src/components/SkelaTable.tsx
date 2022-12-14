@@ -1,5 +1,5 @@
 import React from 'react'
-import Skela from './Skela'
+import {Skela} from './Skela'
 
 /**ReactSkelaTable is configurable with the ReactSkela (use ReactSkela propeties in to ReactSkelaTable) */
 export const SkelaTable = ({
